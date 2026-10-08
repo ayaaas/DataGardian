@@ -1,0 +1,11 @@
+customer_id,name,age,income,country,email
+1001,Aya,23,8500,Morocco,aya@email.com
+1002,Sara,,7200,Morocco,sara@email.com
+1003,Adam,145,6500,maroc,adam@email.com
+1004,Youssef,31,,Morocco,
+1004,Youssef,31,,Morocco,
+1006,Lina,27,9000,Morocco,lina@email.com
+1007,Salma,19,5800,Morocco,salma@email.com
+1008,Omar,250,6200,Morocco,omar@email.com
+1009,Nora,29,,Morocco,nora@email.com
+1010,Imane,34,7100,MA,imane@email.com

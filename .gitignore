@@ -1,0 +1,14 @@
+.venv/
+.jupyter/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+
+_env
+.env.*
+!.env.example
+
+_env
+.env.*
+!.env.example

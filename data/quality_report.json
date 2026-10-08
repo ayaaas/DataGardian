@@ -1,0 +1,104 @@
+{
+    "dataset": {
+        "rows": 10,
+        "columns": 6,
+        "column_names": [
+            "customer_id",
+            "name",
+            "age",
+            "income",
+            "country",
+            "email"
+        ],
+        "numeric_columns": [
+            "customer_id",
+            "age",
+            "income"
+        ],
+        "categorical_columns": [
+            "name",
+            "country",
+            "email"
+        ]
+    },
+    "quality_score": {
+        "overall_score": 88.75,
+        "dimensions": {
+            "completeness": 90.0,
+            "uniqueness": 90.0,
+            "validity": 75.0,
+            "consistency": 100.0
+        },
+        "scoring_method": "Equal-weight average of available dimensions; rules are defined by this project."
+    },
+    "summary": {
+        "missing_cells": 6,
+        "duplicate_rows": 1,
+        "detected_issues": 6,
+        "high_priority_issues": 5
+    },
+    "issues": [
+        {
+            "column": "country",
+            "issue_type": "categorical_inconsistency",
+            "severity": "medium",
+            "affected_rows": 10,
+            "percentage": 100.0,
+            "canonical": "morocco",
+            "variants": [
+                "Morocco",
+                "maroc",
+                "MA"
+            ],
+            "priority_score": 200.0,
+            "priority": "high"
+        },
+        {
+            "column": "income",
+            "issue_type": "missing_values",
+            "severity": "high",
+            "affected_rows": 3,
+            "percentage": 30.0,
+            "priority_score": 90.0,
+            "priority": "high"
+        },
+        {
+            "column": "email",
+            "issue_type": "missing_values",
+            "severity": "high",
+            "affected_rows": 2,
+            "percentage": 20.0,
+            "priority_score": 60.0,
+            "priority": "high"
+        },
+        {
+            "column": "age",
+            "issue_type": "outliers",
+            "severity": "high",
+            "affected_rows": 2,
+            "percentage": 20.0,
+            "lower_bound": 16.5,
+            "upper_bound": 44.5,
+            "priority_score": 60.0,
+            "priority": "high"
+        },
+        {
+            "column": null,
+            "issue_type": "duplicate_rows",
+            "severity": "high",
+            "affected_rows": 1,
+            "percentage": 10.0,
+            "priority_score": 30.0,
+            "priority": "high"
+        },
+        {
+            "column": "age",
+            "issue_type": "missing_values",
+            "severity": "medium",
+            "affected_rows": 1,
+            "percentage": 10.0,
+            "priority_score": 20.0,
+            "priority": "medium"
+        }
+    ]
+}
